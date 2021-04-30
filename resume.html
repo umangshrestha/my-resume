@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .sidenav {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 170px; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #111; /* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 20px;
+        }
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Style page content */
+        .main {
+            margin-left: 170px; /* Same as the width of the sidebar */
+            padding: 0px 10px;
+            width: 360x
+        }
+
+        /* for skills */
+        #container {
+            display: flex;
+            flex-wrap: column;
+            width: 800px;
+            padding: 0px 10px;
+            overflow: auto; /* Disable horizontal scroll */
+
+        }
+
+        #inner {
+            overflow: hidden;
+            width: 800px;
+        }
+
+        .child {
+            width: 300px;
+            margin: 5px;
+            padding: 10px;
+            text-align: left; 
+        }
+        /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            table-layout: fixed;
+            align-self: center;
+        }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        table.styled-table tr:hover td {
+            font-weight: bold;
+            color: #009879;
+        }
+        /* custom tag to show for skills*/
+        tag {
+            width: 300px;
+            margin: 5px;
+            text-align: left; 
+            font-weight: bold;
+            font-style: italic;
+            color: #800080;
+        }
+
+        .showDetails{
+            color: green;
+        }
+
+        /* showing in show details*/
+        .log {
+            background-color: #e6e6e6;
+            border: 1px solid #e6e6e6;
+            color: black;
+            display: block;
+            font-family: "Courier New", Courier, monospace;
+            height: 100px;
+            overflow-y: scroll;
+          
+        }
+
+    </style>
+</head>
+<body>
+    <!--side menu-->
+    <div class="sidenav">
+        <a href="#Experience">Experience</a>
+        <a href="#Education">Education</a>
+        <a href="#Project">Project</a>
+        <a href="#Extra">Extra</a>
+        <a href="#Internship">INternship</a>
+        <a href="#Personal">Personal</a>
+    </div>    
+    <!--experience-->
+    <div id="Experience" class="main">
+        <h1>
+            Experience
+         </h1>
+        <table class="styled-table">
+            <tr>
+                <th>#</th>
+                <th>Company</th>
+                <th>Designation</th>
+                <th>Startdate</th>
+                <th>EndDate</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="https://lifesignals.com/">
+                        LifeSignals Group Inc.
+                    </a> 
+                </td>
+                <td>Engineer</td>
+                <td>10 April 2019</td>
+                <td>_</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="https://www.magal.in/">
+                        Magal Healthcare Pvt Ltd
+                    </a> 
+                </td>
+                <td>Engineer</td>
+                <td>04 July 2018</td>
+                <td>06 Jan 2019</td>
+            </tr>
+        </table>
+    </div>
+    <!--Education-->
+    <div id="Education" class="main">
+        <h1>Education</h1>
+        <table class="styled-table">
+            <tr>
+                <th>#</th>
+                <th>College</th>
+                <th>Level</th>
+                <th>Year</th>
+                <th>Percentage (%)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="https://www.rgit.ac.in/">
+                        Rajiv Gandhi Institute Of Technologies
+                    </a> 
+                </td>
+                <td>B.Tech</td>
+                <td>2018</td>
+                <td>76.1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="https://nist.edu.np/">
+                        National Institute of Sciences
+                    </a> 
+                </td>
+                <td>PCMB</td>
+                <td>2014</td>
+                <td>72.1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <a href="https://bvs.edu.np/">
+                        Brihaspati Vidyasadan
+                    </a> 
+                </td>
+                <td>School</td>
+                <td>2010</td>
+                <td>72.1</td>
+            </tr>
+        </table>
+    </div>
+     <!--Skills-->
+    <div id="Education" class="main">
+        <h1>Skills</h1>
+        <div id="container"> 
+        
+                <div class="child">
+                    <tag>[Frontend]</tag>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Backend]</tag>
+                    <ul>
+                        <li>Python</li>
+                        <li>Golang</li>
+                        <li>Shell</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Automation]</tag>
+                    <ul>
+                        <li>Robot Framework</li>
+                        <li>Selenium</li>
+                        <li>UI Automator</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Database]</tag>
+                    <ul>
+                        <li>MySql</li>
+                        <li>Sqlite</li>
+                        <li>MongoDb</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Devops]</tag>
+                    <ul>
+                        <li>Git</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Tracking tools]</tag>
+                    <ul>
+                        <li>Jira</li>
+                        <li>Testrails</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Os]</tag>
+                    <ul>
+                        <li>Ubuntu</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Hardware]</tag>
+                    <ul>
+                        <li>Raspberry pi</li>
+                        <li>Arduino</li>
+                    </ul>
+                </div>
+                <div class="child">
+                    <tag>[Tools]</tag>
+                    <ul>
+                        <li>Wireshark</li>
+                        <li>MQTT listener</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+     <!--Project-->
+     <div  id="Project" class="main">
+        <h1> Project</h1>
+        <table class="styled-table">
+            <tr>
+                <td>1</td>
+                <td >Modifying ubuntu iso with pre-installed software and dependencies.</td>
+            </tr>
+            <tr>
+                <td class="extra" colspan="2">
+                    <div class="log">
+                        <ul>
+                            <li>Modifying <tag>ubuntu</tag>20.04 LTS server iso using <tag>cubic</tag> </li>
+                            <li>Installing the product and its dependencies</li>
+                            <li>Creating the user interface to access the product using <tag>html, css and js</tag></li>
+                            <li>Backend using <tag>Flask</tag> and <tag>mysql</tag></li>
+                            <li>Monitoring system using /proc/ files</li>
+                            <li>Services running from <tag>crontab</tag></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Creating and Maintenance of Android wrapper for .aar libary.</td>
+            </tr>
+            <tr>
+                <td class="extra" colspan="2">
+                    <div class="log">
+                        <ul>
+                            <li><tag>.aar</tag> libaries are released to the team.</li>
+                            <li>Creating, mainting and deploying the android wrapper for the libary.</li>
+                            <li>Creating libaries for testing of app using<tag>uiautomator</tag>and<tag>adb</tag> commands</li>
+                            <li>Automation using <tag>robot framework</tag></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Summary scripts for parsing logs and visualization</td>
+            </tr>
+            <tr>
+                <td class="extra" colspan="2">
+                    <div class="log">
+                        <ul>
+                            <li>Pulling logs from remote server using<tag>rsync</tag></li>
+                            <li>Parsing logs using <tag>regex</tag>and storing in csv files</li>
+                            <li>Using <tag>pandas</tag> for cleaning and processing of data</li>
+                            <li>Data visualization using<tag>plotly</tag></li>
+                            <li>Unit testing using <tag>pytest</tag></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>For other project go to my github <a href="https://github.com/umangshrestha">
+                    here
+                </a></td>
+            </tr>
+        </table>
+    </div>
+    <!--Internship-->
+    <div id="Internsip" class="main">
+        <h1>
+            Internship
+         </h1>
+        <table class="styled-table"> 
+            <tr>
+                <th>#</th>
+                <th>Company</th>
+                <th>Designation</th>
+                <th>Startdate</th>
+                <th>EndDate</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="http://www.transcaal.com/">
+                        Transcaal Biomedicals
+                    </a> 
+                </td>
+                <td>Internship</td>
+                <td>21 Feb 2019</td>
+                <td>06 Mar 2019</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="http://www.inmtechnologies.com">
+                        INM Technologies Pvt Ltd.
+                    </a> 
+                </td>
+                <td>Internship</td>
+                <td>25 Feb 2018</td>
+                <td>05 May 2018</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="http://www.inmtechnologies.com">
+                        Bangalore Baptist Hospital
+                    </a> 
+                </td>
+                <td>Observership</td>
+                <td>31 Jul 2017</td>
+                <td>14 Aug 2017</td>
+            </tr>
+        </table>
+    </div>
+    <!--Extra-->
+    <div  id="Extra" class="main">
+        <h1> Extra</h1>
+        <table class="styled-table">
+            <tr>
+                <td>1</td>
+                <td class="project-details">Certified in Advanced training by Fluke Biomedicals. </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Published paper on <a href="http://doi.one/10.1729/Journal.18354">Sythesis and charecterizion of ZnO nano particles using mango leaves</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Represented "Micrel Medical Devices" in <a href="https://aoraindia2018-com.webarchive.opub.in/stall_layout.html">AORA 2018</a> handling R-4 stall</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Attended "CDE programme and workshop on 3D CBCT Machine"</td>
+            </tr>
+        </table>
+    </div>
+    <!--Personal-->
+    <div id="Personal" class="main">
+        <h1> Personal Details</h1>
+        <table class="styled-table">
+            <tr>
+                <td>Name</td>
+                <td>
+                    <b>
+                        <a href="https://github.com/umangshrestha">
+                            Umang Shrestha
+                        </a>
+                    </b
+                ></td>
+            </tr>
+            <tr>
+                <td>Phone</td> 
+                <td>
+                        +91 99160 56170
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td> 
+                <td>
+                    <a href="umangshrestha09@gmail.com">
+                        umangshrestha09@gmail.com
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>D.O.B</td>
+                <td>21 sep 1996</td>
+            </tr>
+            <tr>
+                <td>Permanent address</td> 
+                <td>#4, Dhumbarahi, Kathmandu 20, 44600,Nepal</td>
+            </tr>
+            <tr>
+                <td>Languages Known</td> 
+                <td>English, Nepali, Hindi</td>
+            </tr>
+        </table>
+    </div>
+        
+<script>
+
+</script>
+</body>
+</html>
