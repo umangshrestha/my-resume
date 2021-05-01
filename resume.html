@@ -112,11 +112,9 @@
             font-style: italic;
             color: #800080;
         }
-
-        .showDetails{
-            color: green;
+        tag:hover {
+            font-size: large;
         }
-
         /* showing in show details*/
         .log {
             background-color: #e6e6e6;
@@ -125,10 +123,17 @@
             display: block;
             font-family: "Courier New", Courier, monospace;
             height: 100px;
-            overflow-y: scroll;
-          
+            overflow-y: scroll;       
         }
-
+        /*[show details] text*/
+        .show-details {
+            color: green;
+            font-size: 10px;
+        }
+        /*for project description*/
+        .pointer-class {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -157,7 +162,7 @@
             <tr>
                 <td>1</td>
                 <td>
-                    <a href="https://lifesignals.com/">
+                    <a href="https://lifesignals.com/" target="_blank">
                         LifeSignals Group Inc.
                     </a> 
                 </td>
@@ -168,7 +173,7 @@
             <tr>
                 <td>2</td>
                 <td>
-                    <a href="https://www.magal.in/">
+                    <a href="https://www.magal.in/" target="_blank">
                         Magal Healthcare Pvt Ltd
                     </a> 
                 </td>
@@ -187,12 +192,12 @@
                 <th>College</th>
                 <th>Level</th>
                 <th>Year</th>
-                <th>Percentage (%)</th>
+                <th>%</th>
             </tr>
             <tr>
                 <td>1</td>
                 <td>
-                    <a href="https://www.rgit.ac.in/">
+                    <a href="https://www.rgit.ac.in/" target="_blank">
                         Rajiv Gandhi Institute Of Technologies
                     </a> 
                 </td>
@@ -203,7 +208,7 @@
             <tr>
                 <td>2</td>
                 <td>
-                    <a href="https://nist.edu.np/">
+                    <a href="https://nist.edu.np/" target="_blank">
                         National Institute of Sciences
                     </a> 
                 </td>
@@ -214,7 +219,7 @@
             <tr>
                 <td>3</td>
                 <td>
-                    <a href="https://bvs.edu.np/">
+                    <a href="https://bvs.edu.np/" target="_blank">
                         Brihaspati Vidyasadan
                     </a> 
                 </td>
@@ -303,30 +308,36 @@
      <div  id="Project" class="main">
         <h1> Project</h1>
         <table class="styled-table">
-            <tr>
+            <tr class = "pointer-class" id="project-1" onclick="showHideDetail(this.id)">
                 <td>1</td>
                 <td >Modifying ubuntu iso with pre-installed software and dependencies.</td>
+                <td class="show-details" id="project-1-show-details">
+                    [show details]
+                </td>
             </tr>
-            <tr>
-                <td class="extra" colspan="2">
+            <tr id = "project-1-description" style="display:none">
+                <td class="extra" colspan="3">
                     <div class="log">
                         <ul>
                             <li>Modifying <tag>ubuntu</tag>20.04 LTS server iso using <tag>cubic</tag> </li>
                             <li>Installing the product and its dependencies</li>
                             <li>Creating the user interface to access the product using <tag>html, css and js</tag></li>
-                            <li>Backend using <tag>Flask</tag> and <tag>mysql</tag></li>
+                            <li>Backend using <tag>flask</tag> and <tag>mysql</tag></li>
                             <li>Monitoring system using /proc/ files</li>
                             <li>Services running from <tag>crontab</tag></li>
                         </ul>
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr class = "pointer-class" id="project-2" onclick="showHideDetail(this.id)">
                 <td>2</td>
                 <td>Creating and Maintenance of Android wrapper for .aar libary.</td>
+                <td class="show-details" id="project-2-show-details">
+                    [show details]
+                </td>
             </tr>
-            <tr>
-                <td class="extra" colspan="2">
+            <tr id = "project-2-description" style="display:none">
+                <td class="extra" colspan="3">
                     <div class="log">
                         <ul>
                             <li><tag>.aar</tag> libaries are released to the team.</li>
@@ -337,12 +348,15 @@
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr  class = "pointer-class" id="project-3" onclick="showHideDetail(this.id)">
                 <td>3</td>
                 <td>Summary scripts for parsing logs and visualization</td>
+                <td class="show-details" id="project-3-show-details">
+                    [show details]
+                </td>
             </tr>
-            <tr>
-                <td class="extra" colspan="2">
+            <tr id = "project-3-description" style="display:none">
+                <td class="extra" colspan="3">
                     <div class="log">
                         <ul>
                             <li>Pulling logs from remote server using<tag>rsync</tag></li>
@@ -389,7 +403,7 @@
             <tr>
                 <td>2</td>
                 <td>
-                    <a href="http://www.inmtechnologies.com">
+                    <a href="http://www.inmtechnologies.com" target="_blank">
                         INM Technologies Pvt Ltd.
                     </a> 
                 </td>
@@ -400,7 +414,7 @@
             <tr>
                 <td>2</td>
                 <td>
-                    <a href="http://www.inmtechnologies.com">
+                    <a href="http://www.inmtechnologies.com" target="_blank">
                         Bangalore Baptist Hospital
                     </a> 
                 </td>
@@ -440,7 +454,7 @@
                 <td>Name</td>
                 <td>
                     <b>
-                        <a href="https://github.com/umangshrestha">
+                        <a href="https://github.com/umangshrestha" target="_blank">
                             Umang Shrestha
                         </a>
                     </b
@@ -455,9 +469,7 @@
             <tr>
                 <td>Email</td> 
                 <td>
-                    <a href="umangshrestha09@gmail.com">
-                        umangshrestha09@gmail.com
-                    </a>
+                    umangshrestha09@gmail.com
                 </td>
             </tr>
             <tr>
@@ -476,7 +488,15 @@
     </div>
         
 <script>
-
+       const showHideDetail = (divId) => {
+        if (document.getElementById(`${divId}-description`).style.display == "none") {
+            document.getElementById(`${divId}-description`).style.display = null;
+            document.getElementById(`${divId}-show-details`).innerHTML = "[hide details]"
+        } else {
+            document.getElementById(`${divId}-description`).style.display = "none";
+            document.getElementById(`${divId}-show-details`).innerHTML = "[show details]"
+        }
+    }
 </script>
 </body>
 </html>
