@@ -9,14 +9,19 @@
             "Date"            : "Apr 10, 2019 - Present",
             "Link"            : "https://lifesignals.com",
             "Projects"        : [
-                "Creating scalable simulators using Python, which can run 200+ simulations concurrently.",
                 "Creating and maintatining Android wrapper for android library.",
                 "Writing and executing sanity, functionality, and compactibity test plans for android apps.",
-                "Creating automation framework for android apps using Robot Framework and UiAutomator.",
-                "Designing and implementing test beds infrastructure.",
-                "Data analysis and visualization of logs using pandas and plotly.",
+                "Creating automation framework for android apps using Robot Framework, UiAutomator and adb commands.",
+               
+                "Creating Tlv parser using Rust",
+                "Creating scalable Simulators using Python, which can run 200+ simulations concurrently.",
+    
+                "Parsing 20gb+ logs and doing Data analysis and visualization of using golang, pandas and plotly respectively.",
+                "Designing and implementing testbed infrastructure.",
                 "Creating custom system monitoring tools for linux using golang and proc files.",
-                "Creating custom Ubuntu OS using Cubic."
+                "Creating custom out-of-box Ubuntu image using Cubic."
+
+            
             ]
         },
         {
