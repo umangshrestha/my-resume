@@ -9,16 +9,14 @@
             "Date"            : "Apr 10, 2019 - Present",
             "Link"            : "https://lifesignals.com",
             "Projects"        : [
-                "Creating scalable simulators using Python, which can run 200+ simulations concurrently",
+                "Creating scalable simulators using Python, which can run 200+ simulations concurrently.",
                 "Creating and maintatining Android wrapper for android library.",
                 "Writing and executing sanity, functionality, and compactibity test plans for android apps.",
                 "Creating automation framework for android apps using Robot Framework and UiAutomator.",
                 "Designing and implementing test beds infrastructure.",
                 "Data analysis and visualization of logs using pandas and plotly.",
                 "Creating custom system monitoring tools for linux using golang and proc files.",
-                "Creating custom Ubuntu OS using Cubic.",
-                "In charge of team of 3 members"
-
+                "Creating custom Ubuntu OS using Cubic."
             ]
         },
         {
@@ -78,7 +76,7 @@
         }
     ],
     "Extra": [
-        "Published paper on 'Sythesis and charecterizion of ZnO nano particles using mango leaves' [[http://doi.one/10.1729/Journal.18354].",
+        "Published paper on 'Sythesis and charecterizion of ZnO nano particles using mango leaves'.",
         "Technical seminar in CRISPR/CAS-9 system",
         "Certified in 'Advanced training by Fluke Biomedicals'.",
         "Experienced in using tools such as Prosim 4/8, Spotlight, Impulse 4000, IDA-1s, RF303 ESA",

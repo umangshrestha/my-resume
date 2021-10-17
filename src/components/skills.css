@@ -9,7 +9,7 @@ tag {
 }
 
 #inner {
-    overflow: hidden;
+    overflow: scroll;
     width: 800px;
 }
 
@@ -20,7 +20,8 @@ tag {
     text-align: left; 
 }/* for skills make it horizontal view*/
 
-
-li:hover {
-    font-weight: bold;
+li {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: darkslategrey;
 }

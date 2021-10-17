@@ -6,7 +6,7 @@ const PersonalDetails = () => {
     return (
         <div className="side-details" >   
             <img src={image} width="200" height="250" resizeMode="contain" className="resume-picture" alt="resume display"/>
-            <i className="fa fa-user">           {details.Name}        </i>
+            <i id="user" className="fa fa-user">           {details.Name}        </i>
             <i className="fa fa-phone">          {details.Phone}       </i>
             <i className="fa fa-birthday-cake">  {details.DateOfBirth} </i>
             <i className="fa fa-envelope-open">  {details.Email}       </i>

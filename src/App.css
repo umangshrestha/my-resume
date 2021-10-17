@@ -3,11 +3,12 @@
   flex-direction: row;
   height: 100vh;
   align-self: center;
+  margin-left: 5em; /*set to a negative number 1/2 of your width*/
 }
 
 .center-col {
   flex: 1;
-  overflow-y: scroll;
+  overflow-y: hidden;
 
 }
 

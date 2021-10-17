@@ -13,10 +13,10 @@ const Table = (props) => <div className="main" id={props.title}>
             props.details.map((row, pos) => <>
             <tr>
                 <td> {pos+1}       </td>
-                <td> {(props.title==="Education")? row.Institute: row.Company}
+                <th> {(props.title==="Education")? row.Institute: row.Company}
                     <a className="date" > ({row.Date})  </a>
-                </td>
-                <td> {(props.title==="Education")? row.Percentage:row.Designation} </td>
+                </th>
+                <th> {(props.title==="Education")? row.Percentage:row.Designation} </th>
             </tr>
             
                  {addProject(row)} 
@@ -33,7 +33,7 @@ const addProject = (row) => {
         return <tr >
             <td colSpan="3" className="log"> 
                 <ul>
-                    {row.Projects.map(project => <li> {project} </li>)}
+                    {row.Projects.map(project => <li className="lines"> {project} </li>)}
                 </ul>
             </td>
         </tr>
@@ -46,7 +46,7 @@ const AboutMe = (props) =>  <div className="main" id="Extra">
                 About Me
         </h1>
         <div className="log"> 
-            {props.details} 
+           <p> {props.details} </p>
         </div>
     </div>
 
@@ -57,7 +57,7 @@ const Extra = (props) => <div className="main" id="Extra">
     </h1>
     <div className="log"> 
         <ul>
-            {props.details.map(project => <li> {project} </li>)}
+            {props.details.map(project => <li className="lines"> {project} </li>)}
         </ul>
     </div>
 </div>
